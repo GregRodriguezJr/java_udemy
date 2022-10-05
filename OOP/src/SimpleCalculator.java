@@ -45,5 +45,25 @@ public class SimpleCalculator {
         }
         return this.firstNumber / this.secondNumber;
     }
+    public static void main(String[] args) {
+        SimpleCalculator myCalc = new SimpleCalculator();
+        // Test setters
+        myCalc.setFirstNumber(5);
+        myCalc.setSecondNumber(4);
+
+        // Test getters
+        System.out.println(myCalc.getFirstNumber());
+        System.out.println(myCalc.getSecondNumber());
+
+        // Test arithmetic
+        System.out.println("Addition = " + myCalc.getAdditionResult());
+        System.out.println("Subtraction = " + myCalc.getSubtractionResult());
+
+        myCalc.setFirstNumber(5.25);
+        myCalc.setSecondNumber(0);
+
+        System.out.println("Muliply = " + myCalc.getMultiplicationResult());
+        System.out.println("Divide = " + myCalc.getDivisionResult());
+    }
 }
 

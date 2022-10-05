@@ -1,7 +1,7 @@
 public class SimpleCalculator {
     // Write a class with the name SimpleCalculator. The class needs two fields (instance variables) with names firstNumber and secondNumber both of type double.
-    public double firstNumber;
-    public double secondNumber;
+    private double firstNumber;
+    private double secondNumber;
 
     // Method named getFirstNumber without any parameters, it needs to return the value of firstNumber field.
     public double getFirstNumber() {

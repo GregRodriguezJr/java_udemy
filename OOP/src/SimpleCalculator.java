@@ -24,11 +24,26 @@ public class SimpleCalculator {
     }
 
     // Method named getAdditionResult without any parameters, it needs to return the result of adding the field values of firstNumber and secondNumber.
+    public double getAdditionResult() {
+        return this.firstNumber + this.secondNumber;
+    }
 
     // Method named getSubtractionResult without any parameters, it needs to return the result of subtracting the field values of secondNumber from the firstNumber.
+    public double getSubtractionResult() {
+        return this.firstNumber - this.secondNumber;
+    }
 
     // Method named getMultiplicationResult without any parameters, it needs to return the result of multiplying the field values of firstNumber and secondNumber.
+    public double getMultiplicationResult() {
+        return this.firstNumber * this.secondNumber;
+    }
 
     // Method named getDivisionResult without any parameters it needs to return the result of dividing the field values of firstNumber by the secondNumber. In case the value of secondNumber is 0 then return 0.
+    public double getDivisionResult() {
+        if (secondNumber == 0) {
+            return 0;
+        }
+        return this.firstNumber / this.secondNumber;
+    }
 }
 

@@ -10,10 +10,10 @@ public class Wall {
 
     // The second constructor has parameters width and height of type double and it needs to initialize the fields. In case the width is less than 0 it needs to set the width field value to 0, in case the height parameter is less than 0 it needs to set the height field value to 0.
     public Wall(double width, double height) {
-        if(this.width < 0) {
+        if(width < 0) {
             this.width = 0;
         }
-        if (this.height < 0) {
+        if (height < 0) {
             this.height = 0;
         }
         this.width = width;
@@ -31,12 +31,20 @@ public class Wall {
 
     // Method named setWidth with one parameter of type double, it needs to set the value of the width field. If the parameter is less than 0 it needs to set the width field value to 0.
     public void setWidth(double width) {
-        this.width = width;
+        if (width < 0) {
+            this.width = 0;
+        } else {
+            this.width = width;
+        }
     }
 
     // Method named setHeight with one parameter of type double, it needs to set the value of the height field. If the parameter is less than 0 it needs to set the height field value to 0.
     public void setHeight(double height) {
-        this.height = height;
+        if (height < 0) {
+            this.height = 0;
+        } else {
+            this.height = height;
+        }
     }
 
     // Method named getArea without any parameters, it needs to return the area of the wall.

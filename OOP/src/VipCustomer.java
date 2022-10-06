@@ -24,6 +24,15 @@ public class VipCustomer {
         }
 
         // create getters only for this using code generation of intellij as setters wont be needed
-        // test and confirm it works.
-        
+        public String getName() {
+            return this.name;
+        }
+
+        public long getCreditLimit() {
+            return this.creditLimit;
+        }
+
+        public String getEmail() {
+            return this.email;
+        }                
 }

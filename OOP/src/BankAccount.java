@@ -40,8 +40,15 @@ public class BankAccount {
     public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
     }
-    // Create two additional methods
-    // 1. To allow the customer to deposit funds (this should increment the balance field).
-    // 2. To allow the customer to withdraw funds. This should deduct from the balance field,
+    // To allow the customer to deposit funds (this should increment the balance field).
+    public void deposit(long depositAmount) {
+        this.balance += depositAmount;
+        System.out.println("Your new account balance is: " + this.balance);
+    }
+    // To allow the customer to withdraw funds. This should deduct from the balance field,
     // but not allow the withdrawal to complete if their are insufficient funds.
+    public void withdraw(long withdrawAmount) {
+        this.balance -= withdrawAmount;
+        System.out.println("Your new accout balance is: " + this.balance);
+    }
 }

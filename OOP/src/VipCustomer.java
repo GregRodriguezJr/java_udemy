@@ -13,7 +13,7 @@ public class VipCustomer {
         
         // 2nd constructor should pass on the 2 values it receives and add a default value for the 3rd
         public VipCustomer(String name, long creditLimit) {
-            this(name, creditLimit, "unknown");
+            this(name, creditLimit, "unknown@email.com");
         }
 
         // 3rd constructor should save all fields.

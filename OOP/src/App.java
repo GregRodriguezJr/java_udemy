@@ -9,16 +9,18 @@ public class App {
         // System.out.println(newMember.getAccountNum());
 
         // Test VipCustomer
-        VipCustomer vipMember1 = new VipCustomer();
-        System.out.println(vipMember1.getName());
+        // VipCustomer vipMember1 = new VipCustomer();
+        // System.out.println(vipMember1.getName());
 
-        VipCustomer vipCustomer2 = new VipCustomer("John", 2500);
-        System.out.println(vipCustomer2.getCreditLimit());
-        System.out.println(vipCustomer2.getEmail());
+        // VipCustomer vipCustomer2 = new VipCustomer("John", 2500);
+        // System.out.println(vipCustomer2.getCreditLimit());
+        // System.out.println(vipCustomer2.getEmail());
 
-        VipCustomer vipCustomer3 = new VipCustomer("Bill", 5500, "bill@gmail.com");
-        System.out.println(vipCustomer3.getName());
-        System.out.println(vipCustomer3.getCreditLimit());
-        System.out.println(vipCustomer3.getEmail());
+        // VipCustomer vipCustomer3 = new VipCustomer("Bill", 5500, "bill@gmail.com");
+        // System.out.println(vipCustomer3.getName());
+        // System.out.println(vipCustomer3.getCreditLimit());
+        // System.out.println(vipCustomer3.getEmail());
+
+        
     }
 }

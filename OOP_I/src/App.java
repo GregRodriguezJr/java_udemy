@@ -29,6 +29,13 @@ public class App {
         //  System.out.println("width= " + wall.getWidth());
         //  System.out.println("height= " + wall.getHeight());
         //  System.out.println("area= " + wall.getArea());
+
+        // Test Vehicle 
+        Raptor fordRaptor = new Raptor(24);
+        fordRaptor.steer(90);
+        fordRaptor.accelerate(40);
+        fordRaptor.accelerate(10);
+        fordRaptor.accelerate(-20);
     }
 }
 

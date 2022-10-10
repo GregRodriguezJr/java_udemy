@@ -1,6 +1,10 @@
 public class Raptor extends Car{
     private int roadServiceMonths;
 
+    public int getRoadServiceMonths() {
+        return roadServiceMonths;
+    }
+
     public Raptor(int roadServiceMonths) {
         super("Raptor", "white", 4, 5, 5, false);
         this.roadServiceMonths = roadServiceMonths;

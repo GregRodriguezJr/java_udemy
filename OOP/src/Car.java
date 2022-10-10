@@ -20,7 +20,7 @@ public class Car extends Vehicle{
     }
     
     public void changeVelocity(int speed, int direction) {
-        move(speed, direction);
         System.out.println("ChangeVelocity(): speed is " + speed + " direction is " + direction + " degrees.");
+        move(speed, direction);
     }
 }

@@ -1,4 +1,8 @@
-public class Car extends Vehicle{
+package OOP_I;
+
+import OOP_I.Vehicle;
+
+public class Car extends Vehicle {
     private int wheels;
     private int doors;
     private int gears;
@@ -16,7 +20,7 @@ public class Car extends Vehicle{
 
     public void changeGear(int currentGear) {
         this.currentGear = currentGear;
-        System.out.println("Car.setCurrentGear(): changed to " + this.currentGear + " gear.");
+        System.out.println("OOP_I.Car.setCurrentGear(): changed to " + this.currentGear + " gear.");
     }
     
     public void changeVelocity(int speed, int direction) {

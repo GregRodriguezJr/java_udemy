@@ -1,6 +1,7 @@
+package OOP_I;
 
 public class Person {
-// Write a class with the name Person. The class needs three fields (instance variables) with the names firstName, lastName of type String and age of type int.
+// Write a class with the name OOP_I.Person. The class needs three fields (instance variables) with the names firstName, lastName of type String and age of type int.
 private String firstName;
 private String lastName;
 private int age;

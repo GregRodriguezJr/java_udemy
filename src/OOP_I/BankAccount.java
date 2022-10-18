@@ -1,3 +1,4 @@
+package OOP_I;
 
 public class BankAccount {
     // Create fields for the account number, balance, customer name, email and phone number.

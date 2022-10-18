@@ -1,28 +1,30 @@
+package OOP_I;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        // Test BankAccount output
-        // BankAccount newMember = new BankAccount("1234", 0, "John Doe", "johndoe@gmail.com", "555-555-5555");
+        // Test OOP_I.BankAccount output
+        // OOP_I.BankAccount newMember = new OOP_I.BankAccount("1234", 0, "John Doe", "johndoe@gmail.com", "555-555-5555");
 
         // newMember.withdraw(50);
         // newMember.deposit(100);
         // newMember.withdraw(10);
         // System.out.println(newMember.getAccountNum());
 
-        // Test VipCustomer
-        // VipCustomer vipMember1 = new VipCustomer();
+        // Test OOP_I.VipCustomer
+        // OOP_I.VipCustomer vipMember1 = new OOP_I.VipCustomer();
         // System.out.println(vipMember1.getName());
 
-        // VipCustomer vipCustomer2 = new VipCustomer("John", 2500);
+        // OOP_I.VipCustomer vipCustomer2 = new OOP_I.VipCustomer("John", 2500);
         // System.out.println(vipCustomer2.getCreditLimit());
         // System.out.println(vipCustomer2.getEmail());
 
-        // VipCustomer vipCustomer3 = new VipCustomer("Bill", 5500, "bill@gmail.com");
+        // OOP_I.VipCustomer vipCustomer3 = new OOP_I.VipCustomer("Bill", 5500, "bill@gmail.com");
         // System.out.println(vipCustomer3.getName());
         // System.out.println(vipCustomer3.getCreditLimit());
         // System.out.println(vipCustomer3.getEmail());
 
-        // Test Wall
-        //  Wall wall = new Wall(5,4);
+        // Test OOP_I.Wall
+        //  OOP_I.Wall wall = new OOP_I.Wall(5,4);
         //  System.out.println("area= " + wall.getArea());
          
         //  wall.setHeight(-1.5);
@@ -30,7 +32,7 @@ public class App {
         //  System.out.println("height= " + wall.getHeight());
         //  System.out.println("area= " + wall.getArea());
 
-        // Test Vehicle 
+        // Test OOP_I.Vehicle
         Raptor fordRaptor = new Raptor(24);
         fordRaptor.steer(90);
         fordRaptor.accelerate(40);

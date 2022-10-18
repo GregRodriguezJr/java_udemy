@@ -1,5 +1,7 @@
+package OOP_I;
+
 public class VipCustomer {
-        // Create a new class VipCustomer
+        // Create a new class OOP_I.VipCustomer
         // it should have 3 fields name, credit limit, and email address.
         private String name;
         private long creditLimit;

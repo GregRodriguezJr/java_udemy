@@ -1,5 +1,7 @@
+package OOP_I;
+
 public class SimpleCalculator {
-    // Write a class with the name SimpleCalculator. The class needs two fields (instance variables) with names firstNumber and secondNumber both of type double.
+    // Write a class with the name OOP_I.SimpleCalculator. The class needs two fields (instance variables) with names firstNumber and secondNumber both of type double.
     private double firstNumber;
     private double secondNumber;
 

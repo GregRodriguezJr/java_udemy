@@ -1,3 +1,5 @@
+package OOP_I;
+
 public class Wall {
     // The class needs two fields (instance variables) with name width and height of type double.
     private double width;

@@ -1,5 +1,5 @@
-// Start with a base class of a Vehicle, then create a Car class that inherits from this base class.
-// Finally, create another class, a specific type of Car that inherits from the Car class.
+package OOP_I;// Start with a base class of a OOP_I.Vehicle, then create a OOP_I.Car class that inherits from this base class.
+// Finally, create another class, a specific type of OOP_I.Car that inherits from the OOP_I.Car class.
 // You should be able to hand steering, changing gears, and moving (speed in other words).
 // You will want to decide where to put the appropriate state and behaviours (fields and methods).
 // As mentioned above, changing gears, increasing/decreasing speed should be included.
@@ -20,13 +20,13 @@ public class Vehicle {
 
     public void steer(int direction) {
         this.currentDirection += direction;
-        System.out.println("Vehicle.steer(): steering at: " + currentDirection + " degrees.");
+        System.out.println("OOP_I.Vehicle.steer(): steering at: " + currentDirection + " degrees.");
     }
 
     public void move(int velocity, int direction) {
         currentVelocity = velocity;
         currentDirection = direction;
-        System.out.println("Vehicle.move(): moving at " + currentVelocity + " in direction " + currentDirection + " degrees.");
+        System.out.println("OOP_I.Vehicle.move(): moving at " + currentVelocity + " in direction " + currentDirection + " degrees.");
     }
 
     public String getName() {

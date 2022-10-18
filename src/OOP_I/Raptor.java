@@ -1,4 +1,6 @@
-public class Raptor extends Car{
+package OOP_I;
+
+public class Raptor extends Car {
     private int roadServiceMonths;
 
     public int getRoadServiceMonths() {
@@ -6,7 +8,7 @@ public class Raptor extends Car{
     }
 
     public Raptor(int roadServiceMonths) {
-        super("Raptor", "white", 4, 5, 5, false);
+        super("OOP_I.Raptor", "white", 4, 5, 5, false);
         this.roadServiceMonths = roadServiceMonths;
     }
     

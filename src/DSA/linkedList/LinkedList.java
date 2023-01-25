@@ -7,7 +7,7 @@ public class LinkedList {
     private int length;
 
     //  Inner/nested class
-    class Node {
+    static class Node {
         int value;
         Node next;
 
@@ -53,5 +53,34 @@ public class LinkedList {
             tail = newNode;
         }
         length++;
+    }
+
+    public Node removeLast() {
+        // Test if LinkList is empty from starting point
+        if (length == 0) return null;
+
+        Node temp = head;
+        Node pre = head;
+
+        // Iterate through LinkedList to find pointer that points to next to last node
+        while (temp.next != null) {
+            // Walk through list until reaches the end
+            pre = temp;
+            temp = temp.next;
+        }
+        // Breaks out of loop and points tail to that node
+        tail = pre;
+        // Breaks off node from the end of the LinkedList
+        tail.next = null;
+        // Decrement by 1
+        length--;
+
+        // Edge case after while loop, if only 1 node after decrement head and tail still point to that node
+        if (length == 0) {
+            head = null;
+            tail = null;
+        }
+        // return node
+        return temp;
     }
 }

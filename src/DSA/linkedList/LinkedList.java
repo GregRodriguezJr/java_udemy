@@ -145,4 +145,30 @@ public class LinkedList {
         }
         return false;
     }
+
+    public boolean insert(int index, int value) {
+        // check to see if index is in range
+        if (index < 0 || index > length) {
+            return false;
+        }
+        // use prepend method to add to beginning
+        if (index == 0) {
+            prepend(value);
+            return true;
+        }
+        // use append method to add to end
+        if (index == length) {
+            append(index);
+            return true;
+        }
+        Node newNode = new Node(value);
+        // Node will point at previous node in the list
+        Node temp = get(index -1);
+        // Have newNode point to same node as (index - 1)
+        newNode.next = temp.next;
+        // Add node into list
+        temp.next = newNode;
+        length++;
+        return true;
+    }
 }

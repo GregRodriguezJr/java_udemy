@@ -42,14 +42,20 @@ public class Main {
 //        System.out.println(myLinkList.get(2).value + "\n");
 //        myLinkList.printList();
 
-        // Test set method
-        LinkedList myLinkedList = new LinkedList(11);
-        myLinkedList.append(3);
-        myLinkedList.append(23);
-        myLinkedList.append(7);
-        myLinkedList.printList();
-        System.out.println("After set method");
-        myLinkedList.set(1, 4);
+//        // Test set method
+//        LinkedList myLinkedList = new LinkedList(11);
+//        myLinkedList.append(3);
+//        myLinkedList.append(23);
+//        myLinkedList.append(7);
+//        myLinkedList.printList();
+//        System.out.println("After set method");
+//        myLinkedList.set(1, 4);
+//        myLinkedList.printList();
+
+        // Test insert method
+        LinkedList myLinkedList = new LinkedList(0);
+        myLinkedList.append(2);
+        myLinkedList.insert(1,1);
         myLinkedList.printList();
     }
 }

@@ -24,15 +24,22 @@ public class Main {
 //        myLinkedList.prepend(1);
 //        myLinkedList.printList();
 
-        // Test removeFirst
-        LinkedList myLinkedList = new LinkedList(2);
-        myLinkedList.append(1);
+//        // Test removeFirst
+//        LinkedList myLinkedList = new LinkedList(2);
+//        myLinkedList.append(1);
+//        // (2) Items - Returns 2 Node
+//        System.out.println(myLinkedList.removeFirst().value);
+//        // (1) Item - Returns 1 Node
+//        System.out.println(myLinkedList.removeFirst().value);
+//        // (0) Items - Returns null
+//        System.out.println(myLinkedList.removeFirst());
 
-        // (2) Items - Returns 2 Node
-        System.out.println(myLinkedList.removeFirst().value);
-        // (1) Item - Returns 1 Node
-        System.out.println(myLinkedList.removeFirst().value);
-        // (0) Items - Returns null
-        System.out.println(myLinkedList.removeFirst());
+        // Test get method
+        LinkedList myLinkList = new LinkedList(0);
+        myLinkList.append(1);
+        myLinkList.append(2);
+        myLinkList.append(3);
+        System.out.println(myLinkList.get(2).value + "\n");
+        myLinkList.printList();
     }
 }

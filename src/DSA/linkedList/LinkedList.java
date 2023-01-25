@@ -120,4 +120,18 @@ public class LinkedList {
         }
         return temp;
     }
+
+    public Node get(int index) {
+        // If index is out of LinkList range
+        if (index < 0 || index >= length) {
+            return null;
+        }
+        // Assign temp variable to head of LinkList
+        Node temp = head;
+        // Loop through list until index is found
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        return temp;
+    }
 }

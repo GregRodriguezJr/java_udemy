@@ -100,4 +100,24 @@ public class LinkedList {
         // increase length by 1
         length++;
     }
+
+    public Node removeFirst() {
+        // Empty LinkList head and tail are null
+        if (length == 0) {
+            return null;
+        }
+        // Point temp variable to head of list
+        Node temp = head;
+        // Point head to next node
+        head = head.next;
+        // Remove node by pointing next node to null
+        temp.next = null;
+        // Decrement list
+        length--;
+        // Edge case if only 1 node and try to remove first
+        if (length ==0 ) {
+            tail = null;
+        }
+        return temp;
+    }
 }

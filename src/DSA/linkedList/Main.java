@@ -34,12 +34,22 @@ public class Main {
 //        // (0) Items - Returns null
 //        System.out.println(myLinkedList.removeFirst());
 
-        // Test get method
-        LinkedList myLinkList = new LinkedList(0);
-        myLinkList.append(1);
-        myLinkList.append(2);
-        myLinkList.append(3);
-        System.out.println(myLinkList.get(2).value + "\n");
-        myLinkList.printList();
+//        // Test get method
+//        LinkedList myLinkList = new LinkedList(0);
+//        myLinkList.append(1);
+//        myLinkList.append(2);
+//        myLinkList.append(3);
+//        System.out.println(myLinkList.get(2).value + "\n");
+//        myLinkList.printList();
+
+        // Test set method
+        LinkedList myLinkedList = new LinkedList(11);
+        myLinkedList.append(3);
+        myLinkedList.append(23);
+        myLinkedList.append(7);
+        myLinkedList.printList();
+        System.out.println("After set method");
+        myLinkedList.set(1, 4);
+        myLinkedList.printList();
     }
 }

@@ -134,4 +134,15 @@ public class LinkedList {
         }
         return temp;
     }
+
+    public boolean set(int index, int value) {
+        // Use get method to grab index and assign to temp variable
+        Node temp = get(index);
+        // If index is in range reassign value and return true
+        if (temp != null) {
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
 }

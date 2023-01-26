@@ -190,4 +190,22 @@ public class LinkedList {
         length--;
         return temp;
     }
+
+    public void reverse() {
+        Node temp = head;
+        head = tail;
+        tail = temp;
+
+        // Variables for before and after temp at original head position
+        Node after = temp.next;
+        Node before = null;
+
+        // reverse nodes with for loop
+        for (int i = 0; i < length; i++) {
+            after = temp.next;
+            temp.next = before;
+            before = temp;
+            temp = after;
+        }
+    }
 }

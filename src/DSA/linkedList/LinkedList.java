@@ -171,4 +171,23 @@ public class LinkedList {
         length++;
         return true;
     }
+
+    public Node remove(int index) {
+        // return null if index is out of list range
+        if (index < 0 || index >= length) return null;
+        // use removeFirst method, only one item
+        if (index == 0) return removeFirst();
+        if (index == length - 1) return removeLast();
+
+        // Points at previous node
+        Node prev = get(index - 1);
+        Node temp = prev.next;
+
+        // Point to next node
+        prev.next = temp.next;
+        // Remove from LinkList
+        temp.next = null;
+        length--;
+        return temp;
+    }
 }

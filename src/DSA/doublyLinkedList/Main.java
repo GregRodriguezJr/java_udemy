@@ -42,13 +42,23 @@ public class Main {
 //        // 0 Items - Returns null
 //        System.out.println(myDLL.removeFirst());
 
-        // Test get method
-        DoublyLinkedList myDLL = new DoublyLinkedList(0);
-        myDLL.append(1);
-        myDLL.append(2);
+//        // Test get method
+//        DoublyLinkedList myDLL = new DoublyLinkedList(0);
+//        myDLL.append(1);
+//        myDLL.append(2);
+//        myDLL.append(3);
+//        System.out.println(myDLL.get(1).value);
+//        System.out.println(myDLL.get(2).value + "\n");
+//        myDLL.printList();
+
+        // Test set method
+        DoublyLinkedList myDLL = new DoublyLinkedList(11);
         myDLL.append(3);
-        System.out.println(myDLL.get(1).value);
-        System.out.println(myDLL.get(2).value + "\n");
+        myDLL.append(23);
+        myDLL.append(7);
+        myDLL.printList();
+        System.out.println("-----");
+        myDLL.set(1, 4);
         myDLL.printList();
     }
 }

@@ -51,14 +51,22 @@ public class Main {
 //        System.out.println(myDLL.get(2).value + "\n");
 //        myDLL.printList();
 
-        // Test set method
-        DoublyLinkedList myDLL = new DoublyLinkedList(11);
+//        // Test set method
+//        DoublyLinkedList myDLL = new DoublyLinkedList(11);
+//        myDLL.append(3);
+//        myDLL.append(23);
+//        myDLL.append(7);
+//        myDLL.printList();
+//        System.out.println("-----");
+//        myDLL.set(1, 4);
+//        myDLL.printList();
+
+        // Test insert method
+        DoublyLinkedList myDLL = new DoublyLinkedList(1);
         myDLL.append(3);
-        myDLL.append(23);
-        myDLL.append(7);
         myDLL.printList();
-        System.out.println("-----");
-        myDLL.set(1, 4);
+        System.out.println("---");
+        myDLL.insert(1,2);
         myDLL.printList();
     }
 }

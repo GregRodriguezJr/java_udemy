@@ -7,16 +7,20 @@ public class Main {
 
 //        System.out.println("root = " + myBST.root);
 
-        // Test insert method
         myBST.insert(47);
         myBST.insert(21);
         myBST.insert(70);
         myBST.insert(18);
         myBST.insert(52);
         myBST.insert(82);
-
         myBST.insert(27);
-        System.out.println(myBST.root.left.right.value);
 
+//        // Test insert method
+//        myBST.insert(27);
+//        System.out.println(myBST.root.left.right.value);
+
+        // Test contains method
+        System.out.println(myBST.contains(27));
+        System.out.println(myBST.contains(17));
     }
 }

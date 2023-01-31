@@ -9,13 +9,22 @@ public class Main {
 //        myHashTable.set("screws", 140);
 //        myHashTable.printTable();
 
-        // test get method
+//        // test get method
+//        myHashTable.set("nails", 100);
+//        myHashTable.set("tile", 50);
+//        myHashTable.set("lumber", 80);
+//        myHashTable.printTable();
+//        System.out.println("---------------");
+//        System.out.println(myHashTable.get("lumber"));
+//        System.out.println(myHashTable.get("bolts"));
+
+        myHashTable.set("paint",20);
+        myHashTable.set("bolts", 40);
         myHashTable.set("nails", 100);
         myHashTable.set("tile", 50);
         myHashTable.set("lumber", 80);
         myHashTable.printTable();
         System.out.println("---------------");
-        System.out.println(myHashTable.get("lumber"));
-        System.out.println(myHashTable.get("bolts"));
+        System.out.println(myHashTable.keys());
     }
 }

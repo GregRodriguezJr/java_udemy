@@ -5,8 +5,14 @@ public class Main {
 
         Graph myGraph = new Graph();
 
-        myGraph.addVertex("A");
+//        // test add vertex method
+//        myGraph.addVertex("A");
+//        myGraph.printGraph();
 
+        // test add edge method
+        myGraph.addVertex("A");
+        myGraph.addVertex("B");
+        myGraph.addEdge("A", "B");
         myGraph.printGraph();
     }
 }

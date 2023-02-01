@@ -15,17 +15,31 @@ public class Main {
 //        myGraph.addEdge("A", "B");
 //        myGraph.printGraph();
 
-        // test remove edge method
+//        // test remove edge method
+//        myGraph.addVertex("A");
+//        myGraph.addVertex("B");
+//        myGraph.addVertex("C");
+//
+//        myGraph.addEdge("A", "B");
+//        myGraph.addEdge("A", "C");
+//        myGraph.addEdge("B", "C");
+//
+//        myGraph.removeEdge("A", "B");
+//        myGraph.printGraph();
+
+        // test remove vertex
         myGraph.addVertex("A");
         myGraph.addVertex("B");
         myGraph.addVertex("C");
+        myGraph.addVertex("D");
 
         myGraph.addEdge("A", "B");
         myGraph.addEdge("A", "C");
-        myGraph.addEdge("B", "C");
+        myGraph.addEdge("A", "D");
+        myGraph.addEdge("B", "D");
+        myGraph.addEdge("C", "D");
+        myGraph.removeVertex("D");
 
-        myGraph.removeEdge("A", "B");
         myGraph.printGraph();
-
     }
 }

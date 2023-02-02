@@ -19,8 +19,15 @@ public class Main {
 //        myBST.insert(27);
 //        System.out.println(myBST.root.left.right.value);
 
-        // Test contains method
-        System.out.println(myBST.contains(27));
-        System.out.println(myBST.contains(17));
+//        // Test contains method
+//        System.out.println(myBST.contains(27));
+//        System.out.println(myBST.contains(17));
+
+        // Test recursive binary search tree
+        System.out.println("\nBST Contains 27:");
+        System.out.println(myBST.rContains(27));
+
+        System.out.println("\nBST Contains 17:");
+        System.out.println(myBST.rContains(17));
     }
 }

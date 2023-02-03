@@ -30,13 +30,27 @@ public class Main {
 //        System.out.println("\nBST Contains 17:");
 //        System.out.println(myBST.rContains(17));
 
-        // Test recursive insert method
-        myBST.rInsert(2);
-        myBST.rInsert(1);
-        myBST.rInsert(3);
+//        // Test recursive insert method
+//        myBST.rInsert(2);
+//        myBST.rInsert(1);
+//        myBST.rInsert(3);
+//
+//        System.out.println("\nRoot: " + myBST.root.value);
+//        System.out.println("\nRoot->Left: " + myBST.root.left.value);
+//        System.out.println("\nRoot->Right: " + myBST.root.right.value);
+
+        // Test delete node method
+        myBST.insert(2);
+        myBST.insert(1);
+        myBST.insert(3);
 
         System.out.println("\nRoot: " + myBST.root.value);
         System.out.println("\nRoot->Left: " + myBST.root.left.value);
         System.out.println("\nRoot->Right: " + myBST.root.right.value);
+        myBST.deleteNode(2);
+
+        System.out.println("\nRoot: " + myBST.root.value);
+        System.out.println("\nRoot->Left: " + myBST.root.left.value);
+        System.out.println("\nRoot->Right: " + myBST.root.right);
     }
 }

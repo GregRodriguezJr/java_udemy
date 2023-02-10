@@ -20,8 +20,8 @@ public class CollectionsExercise {
         queue.remove();
     }
 
-    void addItemToTreeSet(Set<String> set, String item) {
-
+    static void addItemToTreeSet(Set<String> set, String item) {
+        set.add(item);
     }
 
     public static void main(String[] args) {
@@ -75,5 +75,15 @@ public class CollectionsExercise {
         System.out.println("After remove(): " + queue);
 
         System.out.println("\n------------------------\n");
+
+        Set<String> set = new TreeSet<>();
+        set.add("One");
+        set.add("Two");
+        set.add("Three");
+        set.add("Four");
+        System.out.println("TreeSet method to add item\n");
+        System.out.println("Before add(): " + set);
+        addItemToTreeSet(set,"Five");
+        System.out.println("After add(): " + set);
     }
 }

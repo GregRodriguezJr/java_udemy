@@ -1,9 +1,6 @@
 package linkedinLearning.DataStructures;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Set;
+import java.util.*;
 
 public class CollectionsExercise {
 
@@ -15,8 +12,8 @@ public class CollectionsExercise {
         numbers2.addFirst(i);
     }
 
-    void removeItemFromTopOfStack(Deque<Integer> stack) {
-
+    static void removeItemFromTopOfStack(Deque<Integer> stack) {
+        stack.pop();
     }
 
     void removeItemFromFrontOfQueue(Queue<Integer> queue) {
@@ -34,18 +31,31 @@ public class CollectionsExercise {
         numbers.add(1);
         numbers.add(2);
         numbers.add(3);
-        System.out.println("Before add: " + numbers);
+        System.out.println("Before add(): " + numbers);
         addToEndOfLinkedList(numbers,4);
-        System.out.println("After add: " + numbers);
-        System.out.println("\n------------------------\n");
+        System.out.println("After add(): " + numbers);
 
         // Test addToStartOfLinkedList
         LinkedList<Integer> numbers2 = new LinkedList<>();
         numbers2.add(2);
         numbers2.add(3);
         numbers2.add(4);
-        System.out.println("Before addFirst: " + numbers2);
+        System.out.println("Before addFirst(): " + numbers2);
         addToStartOfLinkedList(numbers2,1);
-        System.out.println("After addFirst: " + numbers2);
+        System.out.println("After addFirst(): " + numbers2);
+
+        System.out.println("\n------------------------\n");
+
+        // Test removing an item from the top of the stack
+        Deque<Integer> stack = new ArrayDeque<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        System.out.println("Before pop(): " + stack);
+        removeItemFromTopOfStack(stack);
+        System.out.println("After pop(): " + stack);
+
+        System.out.println("\n------------------------\n");
     }
 }
